@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" data-lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nail Atelier – Privacy Policy</title><meta name="description" content="Nail Atelier Privacy Policy / Gizlilik Politikası"><meta name="theme-color" content="#c2185b"><meta property="og:title" content="Nail Atelier"><meta property="og:image" content="assets/icon-512.png"><link rel="icon" type="image/png" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"><style>
+:root{
+  --paper:#fbf5f2; --card:#ffffff; --ink:#2a1420; --muted:#7a5a68; --line:#efdfe4;
+  --berry:#c2185b; --berry-deep:#8e0e40; --blush:#f8d7e1; --nude:#e9c2b5; --gold:#b98a3e; --gold-hi:#e8c987;
+  --shadow:0 1px 0 rgba(42,20,32,.04),0 18px 40px -24px rgba(142,14,64,.35);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#160b11; --card:#21121a; --ink:#f7e9ee; --muted:#c3a3b1; --line:#3a2330;
+    --berry:#ff5c95; --berry-deep:#d93374; --blush:#4a2233; --nude:#6b4a40; --gold:#d9b06a; --gold-hi:#f3dca4;
+    --shadow:0 1px 0 rgba(0,0,0,.25),0 18px 44px -22px rgba(0,0,0,.7); color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.7 Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background-image:radial-gradient(1100px 520px at 85% -10%,color-mix(in srgb,var(--blush) 70%,transparent),transparent 70%),
+                   radial-gradient(700px 400px at -10% 20%,color-mix(in srgb,var(--blush) 45%,transparent),transparent 70%);
+  background-repeat:no-repeat}
+a{color:var(--berry);text-underline-offset:3px}
+a:hover{color:var(--berry-deep)}
+:focus-visible{outline:2px solid var(--berry);outline-offset:3px;border-radius:8px}
+h1,h2,h3,.word{font-family:"DM Serif Display",Georgia,serif;font-weight:400;letter-spacing:-.01em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.narrow{max-width:760px}
+
+/* top bar */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.logo img{width:40px;height:40px;border-radius:11px;box-shadow:0 6px 16px -8px rgba(142,14,64,.6)}
+.word{font-size:24px;line-height:1}
+.word em{font-style:italic;color:var(--berry)}
+.seg{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
+.seg button{border:0;background:transparent;color:var(--muted);font:600 13px/1 Poppins,sans-serif;letter-spacing:.04em;padding:8px 13px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center;padding:28px 0 12px}
+.eyebrow{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.22em;color:var(--gold);margin:0 0 14px}
+.hero h1{font-size:clamp(40px,6.2vw,72px);line-height:1.02;margin:0 0 18px}
+.hero h1 em{font-style:italic;color:var(--berry)}
+.lead{font-size:18px;color:var(--muted);max-width:40ch;margin:0 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:600;font-size:16px;
+  padding:14px 24px;border-radius:999px;transition:transform .12s ease,box-shadow .12s ease,background .12s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.primary{background:linear-gradient(180deg,var(--berry),var(--berry-deep));color:#fff;box-shadow:0 12px 24px -12px var(--berry)}
+.btn.primary:hover{color:#fff;transform:translateY(-1px)}
+.btn.ghost{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.btn.ghost:hover{color:var(--berry)}
+.art{position:relative;aspect-ratio:1/1;max-width:420px;width:100%;justify-self:center}
+.art svg{width:100%;height:100%;display:block}
+
+/* cards and sections */
+.card{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:var(--shadow)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:44px 0}
+.card h2{font-size:30px;line-height:1.1;margin:0 0 10px}
+.card p{margin:0 0 16px;color:var(--muted)}
+.mail{display:block;margin-top:14px;color:var(--muted);font-size:14px;overflow-wrap:anywhere}
+.checks{list-style:none;padding:0;margin:0;counter-reset:c}
+.checks li{position:relative;padding:0 0 12px 44px;counter-increment:c}
+.checks li::before{content:counter(c);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;
+  display:grid;place-items:center;font:600 13px/1 Poppins,sans-serif;color:var(--berry);background:var(--blush)}
+section.faq{margin:8px 0 56px}
+section.faq h2{font-size:clamp(30px,4vw,40px);margin:0 0 18px}
+details{background:var(--card);border:1px solid var(--line);border-radius:18px;margin:0 0 10px;padding:0 22px;transition:border-color .15s}
+details[open]{border-color:color-mix(in srgb,var(--berry) 35%,var(--line))}
+summary{cursor:pointer;font-weight:600;padding:17px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:10px;height:10px;border-right:2px solid var(--berry);border-bottom:2px solid var(--berry);transform:rotate(45deg) translateY(-3px);transition:transform .18s}
+details[open] summary::after{transform:rotate(225deg) translateY(-3px)}
+details p{margin:0 0 18px;color:var(--muted)}
+
+/* legal pages */
+.doc{margin:12px 0 8px}
+.doc h1{font-size:clamp(38px,5.4vw,56px);line-height:1.05;margin:8px 0 6px}
+.doc .updated{color:var(--muted);font-size:14px;margin:0 0 26px}
+.doc .intro{font-size:18px;color:var(--muted);margin:0 0 30px}
+.doc h2{font-size:25px;line-height:1.2;margin:34px 0 8px;display:flex;gap:14px;align-items:baseline}
+.doc h2 span.n{font:600 12px/1 Poppins,sans-serif;letter-spacing:.14em;color:var(--gold);min-width:22px}
+.doc p,.doc li{max-width:68ch}
+.doc p{margin:0 0 12px}
+.doc ul{margin:0 0 12px;padding-left:20px}
+.doc li{margin:0 0 6px}
+.doc li::marker{color:var(--berry)}
+.back{font-weight:600;text-decoration:none;font-size:14px}
+.back::before{content:"← "}
+
+footer{border-top:1px solid var(--line);margin-top:40px;padding:26px 0 48px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer nav{display:flex;gap:22px;flex-wrap:wrap}
+footer nav a{color:var(--ink);text-decoration:none;font-weight:600}
+footer nav a:hover{color:var(--berry)}
+
+html[data-lang="en"] [data-l="tr"],html[data-lang="tr"] [data-l="en"]{display:none}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;gap:8px;padding-top:8px}
+  .art{max-width:280px;order:-1}
+  .grid{grid-template-columns:1fr}
+  .card{padding:24px 20px;border-radius:24px}
+  .btn{flex:1 1 100%}
+  .word{font-size:21px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.svc{width:100%;border-collapse:collapse;table-layout:fixed;overflow-wrap:anywhere;margin:8px 0 18px;font-size:15px}.svc th,.svc td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}.svc th{color:var(--muted);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase}@media(max-width:560px){.svc{font-size:13.5px}.svc th,.svc td{padding:8px 6px}}.doc a{overflow-wrap:anywhere;word-break:break-word}</style><script>
+(function(){
+  var d=document.documentElement, h=location.hash.replace('#','');
+  var l=(h==='tr'||h==='en')?h:((navigator.language||'').toLowerCase().indexOf('tr')===0?'tr':'en');
+  function set(x){d.setAttribute('data-lang',x);d.lang=x;
+    var b=document.querySelectorAll('.seg button');for(var i=0;i<b.length;i++)b[i].setAttribute('aria-pressed',b[i].getAttribute('data-set')===x?'true':'false');}
+  set(l);document.addEventListener('DOMContentLoaded',function(){set(d.getAttribute('data-lang'));});
+  document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('[data-set]');if(!t)return;
+    set(t.getAttribute('data-set'));history.replaceState(null,'','#'+t.getAttribute('data-set'));});
+})();
+</script></head><body><header class="wrap"><div class="nav"><a class="logo" href="./"><img src="assets/apple-touch-icon.png" alt="" width="40" height="40"><span class="word"><em>Nail</em> Atelier</span></a><div class="seg" role="group" aria-label="Language / Dil"><button type="button" data-set="en" aria-pressed="true">EN</button><button type="button" data-set="tr" aria-pressed="false">TR</button></div></div></header><main class="wrap narrow"><div class="topline"><a class="back" href="./"><span data-l="en">Support</span><span data-l="tr">Destek</span></a></div><article class="doc" data-l="en" lang="en"><h1>Privacy Policy</h1><p class="updated">Last updated: 2026-11-16</p><p class="intro">This policy explains what data is processed when you play Nail Atelier, why, and the choices you have. In short: no account, your save stays on your phone, and ads are personalized only with your permission.</p><h2><span class="n">01</span>Who we are</h2><p>Nail Atelier (the “game”) is developed and published by <strong>Fatih Sultan Kilic</strong> (Kılıç Studio), İzmir, Türkiye, who is the data controller for the processing described here. Contact: <a href="mailto:devfsk202@gmail.com">devfsk202@gmail.com</a>. This policy applies to the game on iPhone (App Store) and Android (Google Play).</p><h2><span class="n">02</span>What the game stores on your device</h2><ul><li>Your progress (save) and settings are stored only on your device.</li><li>You do not need an account. We never ask for your name, email address, phone number, contacts or precise location.</li><li>We do not run our own servers and we do not receive your save.</li></ul><h2><span class="n">03</span>Photos of your designs</h2><p>The photo button creates a picture of the nails you painted, on your device. It leaves the device only if you choose an app or “Save Image” in the share sheet. Your phone may ask for permission to add the picture to your gallery; the game never reads your photo library.</p><h2><span class="n">04</span>Advertising (Google AdMob)</h2><p>Ads are provided by Google AdMob: rewarded videos that you choose to watch, and, after you have played for a while, short ads between clients. To show, limit and measure ads and prevent fraud, Google may process your device’s advertising identifier (on iOS only if you allow tracking; on Android you can reset or delete it in your device settings), your IP address (which shows your approximate location), device and app information, your interactions with ads, and diagnostic data.</p><ul><li>Where the law requires it (European Economic Area, United Kingdom, Switzerland and some US states) you are asked for your choice first via Google’s consent message, and you can change it later in Settings → Privacy.</li><li>On iPhone, Apple asks whether the game may track you. If you decline, or do not consent, ads are not personalized. Rewards never depend on your choice.</li><li>The “No Ads” purchase turns off the ads between clients for good.</li><li>How Google uses data: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a> · Google Privacy Policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li></ul><h2><span class="n">05</span>Analytics and crash reports (Google Firebase)</h2><p>We use Firebase Analytics and Firebase Crashlytics to understand how the game is played (for example how many clients players serve before they stop) and to fix crashes. This involves an app-instance identifier, gameplay events, device model, operating system version, approximate location derived from your IP address, and crash logs. We do not use this data to identify you, we do not combine it with other data, and we do not sell it. Google signals is turned off.</p><h2><span class="n">06</span>Game settings from our website</h2><p>When the game starts it downloads a small settings file (config.json) from this website, which tells it how often ads between clients may appear. Like any website request, this involves your IP address; GitHub (which hosts this site) may keep it in its server logs. No other data is sent.</p><h2><span class="n">07</span>Purchases</h2><p>In-app purchases are handled by the Apple App Store or Google Play. We never see or store your payment details; we only receive confirmation from the store that a purchase was made, so the game can unlock it. Refunds are handled by the store.</p><h2><span class="n">08</span>Third-party services</h2><table class="svc"><tr><th>Service</th><th>Provider</th><th>Purpose</th></tr><tr><td>AdMob + User Messaging Platform</td><td>Google LLC / Google Ireland Ltd.</td><td>Ads, consent</td></tr><tr><td>Firebase Analytics, Crashlytics</td><td>Google LLC</td><td>Usage statistics, crash reports</td></tr><tr><td>App Store / Google Play billing</td><td>Apple Inc. / Google LLC</td><td>Purchases</td></tr><tr><td>GitHub Pages</td><td>GitHub, Inc.</td><td>This website and the settings file</td></tr></table><h2><span class="n">09</span>Legal bases, retention and transfers</h2><ul><li>Legal bases (GDPR / KVKK): your consent for personalized ads and tracking; our legitimate interest in keeping the game working, measuring use in aggregate and fixing crashes; performance of a contract for purchases.</li><li>Retention: analytics events are kept for up to 14 months, crash reports for up to 90 days; Google keeps ad data under its own policies. Your save stays on your device until you delete it.</li><li>Our service providers may process data outside your country, including in the United States, under safeguards such as the EU Standard Contractual Clauses.</li></ul><h2><span class="n">10</span>Deleting your data</h2><p>You can delete your save in Settings → “Reset save” or by uninstalling the game. We keep no account for you. To reset your advertising identifier, use your device settings. To ask about data processed by the services above, write to us; we answer within 30 days.</p><h2><span class="n">11</span>Children</h2><p>The game is for a general audience and is not directed to children under 13. We do not knowingly collect personal data from children. If you believe a child has provided us data, contact us and we will help remove it.</p><h2><span class="n">12</span>Your rights</h2><p>Depending on where you live (for example under the GDPR, the UK GDPR, KVKK or US state laws) you may have the right to access, correct, delete or port your data, to object to or restrict processing, to withdraw consent at any time, and to complain to your data protection authority. Write to <a href="mailto:devfsk202@gmail.com">devfsk202@gmail.com</a>.</p><h2><span class="n">13</span>Changes</h2><p>If this policy changes, the new version will be published on this page with a new date at the top. Significant changes will also be mentioned in the store release notes.</p><p style="margin-top:28px">Contact: <a href="mailto:devfsk202@gmail.com">devfsk202@gmail.com</a></p></article><article class="doc" data-l="tr" lang="tr"><h1>Gizlilik Politikası</h1><p class="updated">Son güncelleme: 2026-11-16</p><p class="intro">Bu metin, Nail Atelier’i oynarken hangi verilerin neden işlendiğini ve hangi seçeneklere sahip olduğunu açıklar. Kısaca: hesap yok, kaydın telefonunda kalır, reklamlar yalnızca iznin varsa kişiselleştirilir.</p><h2><span class="n">01</span>Biz kimiz</h2><p>Nail Atelier (“oyun”), <strong>Fatih Sultan Kilic</strong> (Kılıç Studio), İzmir, Türkiye tarafından geliştirilir ve yayımlanır; burada anlatılan işlemenin veri sorumlusudur. İletişim: <a href="mailto:devfsk202@gmail.com">devfsk202@gmail.com</a>. Bu politika oyunun iPhone (App Store) ve Android (Google Play) sürümleri için geçerlidir.</p><h2><span class="n">02</span>Oyunun cihazında sakladıkları</h2><ul><li>İlerlemen (kayıt) ve ayarların yalnızca cihazında saklanır.</li><li>Hesap açman gerekmez. Adını, e-posta adresini, telefon numaranı, rehberini ya da tam konumunu hiçbir zaman istemeyiz.</li><li>Kendi sunucumuz yoktur; kaydın bize gelmez.</li></ul><h2><span class="n">03</span>Tasarımlarının fotoğrafları</h2><p>Fotoğraf düğmesi boyadığın tırnakların resmini cihazında oluşturur. Resim, yalnızca paylaşım ekranında bir uygulama ya da “Görüntüyü Kaydet” seçersen cihazdan çıkar. Telefonun galeriye ekleme izni isteyebilir; oyun fotoğraf arşivini hiçbir zaman okumaz.</p><h2><span class="n">04</span>Reklam (Google AdMob)</h2><p>Reklamları Google AdMob sağlar: izlemeyi senin seçtiğin ödüllü videolar ve bir süre oynadıktan sonra müşteriler arasında kısa reklamlar. Google, reklamları göstermek, sınırlamak, ölçmek ve sahtekârlığı önlemek için cihazının reklam kimliğini (iOS’ta yalnızca izlemeye izin verirsen; Android’de cihaz ayarlarından sıfırlayabilir ya da silebilirsin), IP adresini (yaklaşık konumunu gösterir), cihaz ve uygulama bilgilerini, reklamlarla etkileşimini ve tanılama verilerini işleyebilir.</p><ul><li>Yasanın gerektirdiği yerlerde (Avrupa Ekonomik Alanı, Birleşik Krallık, İsviçre ve bazı ABD eyaletleri) önce Google’ın onay mesajıyla tercihin sorulur; tercihini sonradan Ayarlar → Gizlilik’ten değiştirebilirsin.</li><li>iPhone’da Apple, oyunun seni izleyip izleyemeyeceğini sorar. İzin vermezsen ya da onay vermezsen reklamlar kişiselleştirilmez. Ödüller seçimine bağlı değildir.</li><li>“Reklamsız” satın alımı müşteriler arasındaki reklamları kalıcı olarak kapatır.</li><li>Google’ın verileri nasıl kullandığı: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a> · Google Gizlilik Politikası: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li></ul><h2><span class="n">05</span>Analitik ve çökme raporları (Google Firebase)</h2><p>Oyunun nasıl oynandığını anlamak (örneğin oyuncuların kaç müşteriden sonra bıraktığını görmek) ve çökmeleri düzeltmek için Firebase Analytics ve Firebase Crashlytics kullanırız. Bu, bir uygulama örneği kimliğini, oynanış olaylarını, cihaz modelini, işletim sistemi sürümünü, IP adresinden türetilen yaklaşık konumu ve çökme kayıtlarını içerir. Bu verileri kimliğini belirlemek için kullanmayız, başka verilerle birleştirmeyiz ve satmayız. Google signals kapalıdır.</p><h2><span class="n">06</span>Web sitemizden oyun ayarları</h2><p>Oyun açılırken bu siteden küçük bir ayar dosyası (config.json) indirir; dosya, müşteriler arası reklamların ne sıklıkla çıkabileceğini belirtir. Her web isteğinde olduğu gibi IP adresin kullanılır; siteyi barındıran GitHub bunu sunucu kayıtlarında tutabilir. Başka veri gönderilmez.</p><h2><span class="n">07</span>Satın almalar</h2><p>Uygulama içi satın almaları Apple App Store ya da Google Play yürütür. Ödeme bilgilerini görmeyiz ve saklamayız; oyunun ürünü açabilmesi için mağazadan yalnızca satın almanın yapıldığı bilgisini alırız. İadeleri mağaza yürütür.</p><h2><span class="n">08</span>Üçüncü taraf hizmetler</h2><table class="svc"><tr><th>Hizmet</th><th>Sağlayıcı</th><th>Amaç</th></tr><tr><td>AdMob + User Messaging Platform</td><td>Google LLC / Google Ireland Ltd.</td><td>Reklam, onay</td></tr><tr><td>Firebase Analytics, Crashlytics</td><td>Google LLC</td><td>Kullanım istatistiği, çökme raporu</td></tr><tr><td>App Store / Google Play ödeme</td><td>Apple Inc. / Google LLC</td><td>Satın alma</td></tr><tr><td>GitHub Pages</td><td>GitHub, Inc.</td><td>Bu site ve ayar dosyası</td></tr></table><h2><span class="n">09</span>Hukuki sebepler, saklama ve aktarım</h2><ul><li>Hukuki sebepler (KVKK / GDPR): kişiselleştirilmiş reklam ve izleme için açık rızan; oyunun çalışması, kullanımın toplu ölçülmesi ve çökmelerin düzeltilmesi için meşru menfaatimiz; satın almalar için sözleşmenin ifası.</li><li>Saklama: analitik olaylar en fazla 14 ay, çökme raporları en fazla 90 gün saklanır; Google reklam verilerini kendi politikalarına göre saklar. Kaydın, sen silene kadar cihazında kalır.</li><li>Hizmet sağlayıcılarımız verileri ABD dahil yurt dışında, AB Standart Sözleşme Maddeleri gibi güvencelerle işleyebilir.</li></ul><h2><span class="n">10</span>Verilerini silme</h2><p>Kaydını Ayarlar → “Kaydı sıfırla” ile ya da oyunu silerek kaldırabilirsin. Senin için bir hesap tutmayız. Reklam kimliğini sıfırlamak için cihaz ayarlarını kullan. Yukarıdaki hizmetlerin işlediği verilerle ilgili taleplerin için bize yaz; 30 gün içinde yanıtlarız.</p><h2><span class="n">11</span>Çocuklar</h2><p>Oyun genel kitleye yöneliktir, 13 yaşın altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel veri toplamayız. Bir çocuğun bize veri verdiğini düşünüyorsan bize yaz, silinmesine yardım ederiz.</p><h2><span class="n">12</span>Hakların</h2><p>Yaşadığın yere göre (KVKK, GDPR, UK GDPR ya da ABD eyalet yasaları) verilerine erişme, düzeltme, silme ve taşıma, işlemeye itiraz etme ya da kısıtlama, rızanı her an geri alma ve veri koruma kurumuna şikâyet etme hakların olabilir. <a href="mailto:devfsk202@gmail.com">devfsk202@gmail.com</a> adresine yaz.</p><h2><span class="n">13</span>Değişiklikler</h2><p>Bu metin değişirse yeni hâli bu sayfada, üstte yeni tarihiyle yayımlanır. Önemli değişiklikler mağaza sürüm notlarında da belirtilir.</p><p style="margin-top:28px">İletişim: <a href="mailto:devfsk202@gmail.com">devfsk202@gmail.com</a></p></article></main><footer class="wrap"><nav><a href="./"><span data-l="en">Support</span><span data-l="tr">Destek</span></a><a href="privacy.html"><span data-l="en">Privacy Policy</span><span data-l="tr">Gizlilik Politikası</span></a><a href="terms.html"><span data-l="en">Terms of Use</span><span data-l="tr">Kullanım Koşulları</span></a></nav><span>© 2026 Fatih Sultan Kilic</span></footer></body></html>

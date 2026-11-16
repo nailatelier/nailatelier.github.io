@@ -1,0 +1,6 @@
+{
+  "interstitial_enabled": true,
+  "interstitial_first_customer": 6,
+  "interstitial_every_customers": 3,
+  "interstitial_gap_seconds": 150
+}

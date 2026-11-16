@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" data-lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nail Atelier – Support</title><meta name="description" content="Nail Atelier support, FAQ and contact / Destek, sık sorulanlar ve iletişim"><meta name="theme-color" content="#c2185b"><meta property="og:title" content="Nail Atelier"><meta property="og:image" content="assets/icon-512.png"><link rel="icon" type="image/png" href="assets/favicon.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"><style>
+:root{
+  --paper:#fbf5f2; --card:#ffffff; --ink:#2a1420; --muted:#7a5a68; --line:#efdfe4;
+  --berry:#c2185b; --berry-deep:#8e0e40; --blush:#f8d7e1; --nude:#e9c2b5; --gold:#b98a3e; --gold-hi:#e8c987;
+  --shadow:0 1px 0 rgba(42,20,32,.04),0 18px 40px -24px rgba(142,14,64,.35);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#160b11; --card:#21121a; --ink:#f7e9ee; --muted:#c3a3b1; --line:#3a2330;
+    --berry:#ff5c95; --berry-deep:#d93374; --blush:#4a2233; --nude:#6b4a40; --gold:#d9b06a; --gold-hi:#f3dca4;
+    --shadow:0 1px 0 rgba(0,0,0,.25),0 18px 44px -22px rgba(0,0,0,.7); color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.7 Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background-image:radial-gradient(1100px 520px at 85% -10%,color-mix(in srgb,var(--blush) 70%,transparent),transparent 70%),
+                   radial-gradient(700px 400px at -10% 20%,color-mix(in srgb,var(--blush) 45%,transparent),transparent 70%);
+  background-repeat:no-repeat}
+a{color:var(--berry);text-underline-offset:3px}
+a:hover{color:var(--berry-deep)}
+:focus-visible{outline:2px solid var(--berry);outline-offset:3px;border-radius:8px}
+h1,h2,h3,.word{font-family:"DM Serif Display",Georgia,serif;font-weight:400;letter-spacing:-.01em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.narrow{max-width:760px}
+
+/* top bar */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.logo img{width:40px;height:40px;border-radius:11px;box-shadow:0 6px 16px -8px rgba(142,14,64,.6)}
+.word{font-size:24px;line-height:1}
+.word em{font-style:italic;color:var(--berry)}
+.seg{display:inline-flex;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
+.seg button{border:0;background:transparent;color:var(--muted);font:600 13px/1 Poppins,sans-serif;letter-spacing:.04em;padding:8px 13px;border-radius:999px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center;padding:28px 0 12px}
+.eyebrow{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.22em;color:var(--gold);margin:0 0 14px}
+.hero h1{font-size:clamp(40px,6.2vw,72px);line-height:1.02;margin:0 0 18px}
+.hero h1 em{font-style:italic;color:var(--berry)}
+.lead{font-size:18px;color:var(--muted);max-width:40ch;margin:0 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:600;font-size:16px;
+  padding:14px 24px;border-radius:999px;transition:transform .12s ease,box-shadow .12s ease,background .12s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.primary{background:linear-gradient(180deg,var(--berry),var(--berry-deep));color:#fff;box-shadow:0 12px 24px -12px var(--berry)}
+.btn.primary:hover{color:#fff;transform:translateY(-1px)}
+.btn.ghost{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.btn.ghost:hover{color:var(--berry)}
+.art{position:relative;aspect-ratio:1/1;max-width:420px;width:100%;justify-self:center}
+.art svg{width:100%;height:100%;display:block}
+
+/* cards and sections */
+.card{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:var(--shadow)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:44px 0}
+.card h2{font-size:30px;line-height:1.1;margin:0 0 10px}
+.card p{margin:0 0 16px;color:var(--muted)}
+.mail{display:block;margin-top:14px;color:var(--muted);font-size:14px;overflow-wrap:anywhere}
+.checks{list-style:none;padding:0;margin:0;counter-reset:c}
+.checks li{position:relative;padding:0 0 12px 44px;counter-increment:c}
+.checks li::before{content:counter(c);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;
+  display:grid;place-items:center;font:600 13px/1 Poppins,sans-serif;color:var(--berry);background:var(--blush)}
+section.faq{margin:8px 0 56px}
+section.faq h2{font-size:clamp(30px,4vw,40px);margin:0 0 18px}
+details{background:var(--card);border:1px solid var(--line);border-radius:18px;margin:0 0 10px;padding:0 22px;transition:border-color .15s}
+details[open]{border-color:color-mix(in srgb,var(--berry) 35%,var(--line))}
+summary{cursor:pointer;font-weight:600;padding:17px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";flex:none;width:10px;height:10px;border-right:2px solid var(--berry);border-bottom:2px solid var(--berry);transform:rotate(45deg) translateY(-3px);transition:transform .18s}
+details[open] summary::after{transform:rotate(225deg) translateY(-3px)}
+details p{margin:0 0 18px;color:var(--muted)}
+
+/* legal pages */
+.doc{margin:12px 0 8px}
+.doc h1{font-size:clamp(38px,5.4vw,56px);line-height:1.05;margin:8px 0 6px}
+.doc .updated{color:var(--muted);font-size:14px;margin:0 0 26px}
+.doc .intro{font-size:18px;color:var(--muted);margin:0 0 30px}
+.doc h2{font-size:25px;line-height:1.2;margin:34px 0 8px;display:flex;gap:14px;align-items:baseline}
+.doc h2 span.n{font:600 12px/1 Poppins,sans-serif;letter-spacing:.14em;color:var(--gold);min-width:22px}
+.doc p,.doc li{max-width:68ch}
+.doc p{margin:0 0 12px}
+.doc ul{margin:0 0 12px;padding-left:20px}
+.doc li{margin:0 0 6px}
+.doc li::marker{color:var(--berry)}
+.back{font-weight:600;text-decoration:none;font-size:14px}
+.back::before{content:"← "}
+
+footer{border-top:1px solid var(--line);margin-top:40px;padding:26px 0 48px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer nav{display:flex;gap:22px;flex-wrap:wrap}
+footer nav a{color:var(--ink);text-decoration:none;font-weight:600}
+footer nav a:hover{color:var(--berry)}
+
+html[data-lang="en"] [data-l="tr"],html[data-lang="tr"] [data-l="en"]{display:none}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;gap:8px;padding-top:8px}
+  .art{max-width:280px;order:-1}
+  .grid{grid-template-columns:1fr}
+  .card{padding:24px 20px;border-radius:24px}
+  .btn{flex:1 1 100%}
+  .word{font-size:21px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style><script>
+(function(){
+  var d=document.documentElement, h=location.hash.replace('#','');
+  var l=(h==='tr'||h==='en')?h:((navigator.language||'').toLowerCase().indexOf('tr')===0?'tr':'en');
+  function set(x){d.setAttribute('data-lang',x);d.lang=x;
+    var b=document.querySelectorAll('.seg button');for(var i=0;i<b.length;i++)b[i].setAttribute('aria-pressed',b[i].getAttribute('data-set')===x?'true':'false');}
+  set(l);document.addEventListener('DOMContentLoaded',function(){set(d.getAttribute('data-lang'));});
+  document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('[data-set]');if(!t)return;
+    set(t.getAttribute('data-set'));history.replaceState(null,'','#'+t.getAttribute('data-set'));});
+})();
+</script></head><body><header class="wrap"><div class="nav"><a class="logo" href="./"><img src="assets/apple-touch-icon.png" alt="" width="40" height="40"><span class="word"><em>Nail</em> Atelier</span></a><div class="seg" role="group" aria-label="Language / Dil"><button type="button" data-set="en" aria-pressed="true">EN</button><button type="button" data-set="tr" aria-pressed="false">TR</button></div></div></header><main class="wrap"><section class="hero"><div><p class="eyebrow" data-l="en">MANICURE · POLISH · NAIL ART</p><p class="eyebrow" data-l="tr">MANİKÜR · OJE · NAIL ART</p><h1 data-l="en">Your own little <em>nail atelier.</em></h1><h1 data-l="tr">Kendi küçük <em>tırnak atölyen.</em></h1><p class="lead" data-l="en">Paint, file and decorate nails for clients who walk in with a wish. Grow a cosy salon into the most talked-about studio in town.</p><p class="lead" data-l="tr">Kapıdan bir istekle giren müşterilerin tırnaklarını boya, törpüle ve süsle. Küçük salonunu şehrin en çok konuşulan stüdyosuna dönüştür.</p><div class="cta"><a class="btn primary" href="mailto:devfsk202@gmail.com?subject=Nail%20Atelier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg><span data-l="en">Email support</span><span data-l="tr">Destek&#x27;e yaz</span></a><a class="btn ghost" href="privacy.html"><span data-l="en">Privacy Policy</span><span data-l="tr">Gizlilik Politikası</span></a></div></div><div class="art"><svg viewBox="0 0 400 400" role="img" aria-label="Three painted almond nails: berry, nude with a gold line, and blush"><defs><radialGradient id="halo" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="var(--blush)"/><stop offset="1" stop-color="var(--blush)" stop-opacity="0"/></radialGradient><linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2306f"/><stop offset=".55" stop-color="#c2185b"/><stop offset="1" stop-color="#7d0b38"/></linearGradient><linearGradient id="nude" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6d8cc"/><stop offset=".6" stop-color="#e3b7a6"/><stop offset="1" stop-color="#b98473"/></linearGradient><linearGradient id="blush" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd3e1"/><stop offset=".6" stop-color="#f4a6bf"/><stop offset="1" stop-color="#d06e91"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a7782f"/><stop offset=".5" stop-color="#f3dca4"/><stop offset="1" stop-color="#b98a3e"/></linearGradient><filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="6" dy="14" stdDeviation="12" flood-color="#8e0e40" flood-opacity=".28"/></filter></defs><circle cx="200" cy="205" r="190" fill="url(#halo)"/><g filter="url(#soft)"><g transform="translate(120 220) rotate(-24)"><path d="M-46 70 C-50 20 -48 -40 -30 -78 C-18 -104 18 -104 30 -78 C48 -40 50 20 46 70 C40 92 -40 92 -46 70 Z" fill="url(#nude)"/><path d="M-36 -52 C-14 -64 14 -64 36 -52" stroke="url(#gold)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M-28 -50 C-34 -10 -34 30 -30 58" stroke="#fff" stroke-opacity=".55" stroke-width="7" stroke-linecap="round" fill="none"/><ellipse cx="-12" cy="-74" rx="5" ry="3" fill="#fff" fill-opacity=".9"/></g><g transform="translate(280 220) rotate(24)"><path d="M-46 70 C-50 20 -48 -40 -30 -78 C-18 -104 18 -104 30 -78 C48 -40 50 20 46 70 C40 92 -40 92 -46 70 Z" fill="url(#blush)"/><circle cx="0" cy="-30" r="7" fill="url(#gold)"/><path d="M-28 -50 C-34 -10 -34 30 -30 58" stroke="#fff" stroke-opacity=".55" stroke-width="7" stroke-linecap="round" fill="none"/><ellipse cx="-12" cy="-74" rx="5" ry="3" fill="#fff" fill-opacity=".9"/></g><g transform="translate(200 196) rotate(0)"><path d="M-46 70 C-50 20 -48 -40 -30 -78 C-18 -104 18 -104 30 -78 C48 -40 50 20 46 70 C40 92 -40 92 -46 70 Z" fill="url(#berry)"/><path d="M-34 -58 C-14 -70 14 -70 34 -58" stroke="url(#gold)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M-28 -50 C-34 -10 -34 30 -30 58" stroke="#fff" stroke-opacity=".55" stroke-width="7" stroke-linecap="round" fill="none"/><ellipse cx="-12" cy="-74" rx="5" ry="3" fill="#fff" fill-opacity=".9"/></g></g><g fill="#fff"><path d="M328 92 l5 15 15 5 -15 5 -5 15 -5 -15 -15 -5 15 -5z"/><path d="M78 312 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3z" opacity=".9"/></g></svg></div></section><div class="grid"><section class="card"><h2 data-l="en">Need a hand?</h2><h2 data-l="tr">Yardım mı lazım?</h2><p data-l="en">Write to us about a bug, a missing purchase or an idea for the game. We read every message and usually reply within two days.</p><p data-l="tr">Bir hata, eksik bir satın alma ya da oyun için bir fikir için bize yaz. Her mesajı okuyoruz, genellikle iki gün içinde dönüyoruz.</p><a class="btn primary" href="mailto:devfsk202@gmail.com?subject=Nail%20Atelier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg><span data-l="en">Email support</span><span data-l="tr">E-posta gönder</span></a><span class="mail">devfsk202@gmail.com</span></section><section class="card"><h2 data-l="en">Help us help you faster</h2><h2 data-l="tr">Daha hızlı yardım için</h2><ol class="checks" data-l="en"><li>Your device model (for example, iPhone 15 or Galaxy S24)</li><li>Your iOS or Android version (Settings → General → About / Settings → About phone)</li><li>What you were doing when it happened, a screenshot helps a lot</li></ol><ol class="checks" data-l="tr"><li>Cihaz modelin (örneğin iPhone 15 ya da Galaxy S24)</li><li>iOS ya da Android sürümün (Ayarlar → Genel → Hakkında / Ayarlar → Telefon hakkında)</li><li>Sorun olduğunda ne yapıyordun; bir ekran görüntüsü çok işe yarar</li></ol></section></div><section class="faq"><h2 data-l="en">Common questions</h2><h2 data-l="tr">Sık sorulanlar</h2><div data-l="en"><details><summary>I bought something on another device. How do I get it back?</summary><p>Tap your coins at the top of the screen to open the Coin Store, then tap “Restore purchases”. Use the same Apple ID or Google account you bought it with. Coin packs are used up when bought, so only “No ads” can be restored.</p></details><details><summary>Do I have to watch ads?</summary><p>Video ads that give a reward (double pay, free coins, a bigger daily gift) only play when you tap them. After you have played for a while a short ad may appear between clients; the “No ads” purchase turns those off for good.</p></details><details><summary>Can I turn off personalized ads?</summary><p>Yes. On iPhone go to Settings → Privacy &amp; Security → Tracking and turn it off for Nail Atelier. On Android go to Settings → Google → Ads and delete or reset your advertising ID. Where the law asks for it (for example in the EU and UK) you can also change your choice in the game: Settings → Privacy. Rewards stay the same either way.</p></details><details><summary>How do I change the language?</summary><p>The game opens in your phone&#x27;s language (English, Turkish, Spanish, Portuguese, German or French). To pick another one, open Settings in the game and tap a language.</p></details><details><summary>How do I start over or delete my data?</summary><p>Open Settings in the game and tap “Reset save”, or uninstall the game. Your progress is stored only on your device.</p></details></div><div data-l="tr"><details><summary>Başka bir cihazda satın aldığım şeyi nasıl geri alırım?</summary><p>Ekranın üstündeki coin sayına dokunup Coin Mağazası&#x27;nı aç ve “Satın alımları geri yükle”ye dokun. Satın alırken kullandığın Apple ID ya da Google hesabıyla giriş yapmış ol. Coin paketleri alındığında harcandığı için yalnızca “Reklamsız oyna” geri yüklenir.</p></details><details><summary>Reklam izlemek zorunda mıyım?</summary><p>Ödül veren video reklamlar (2 kat ödeme, ücretsiz coin, büyük günlük hediye) yalnızca sen dokunursan oynar. Bir süre oynadıktan sonra müşteriler arasında kısa bir reklam çıkabilir; “Reklamsız oyna” satın alımı bunları kalıcı olarak kapatır.</p></details><details><summary>Kişiselleştirilmiş reklamları kapatabilir miyim?</summary><p>Evet. iPhone&#x27;da Ayarlar → Gizlilik ve Güvenlik → Takip bölümünden Nail Atelier için kapat. Android&#x27;de Ayarlar → Google → Reklamlar&#x27;dan reklam kimliğini sil ya da sıfırla. Yasanın istediği yerlerde (örneğin AB ve Birleşik Krallık) seçimini oyunda da değiştirebilirsin: Ayarlar → Gizlilik. Ödüller her iki durumda da aynıdır.</p></details><details><summary>Dili nasıl değiştiririm?</summary><p>Oyun telefonunun dilinde açılır (Türkçe, İngilizce, İspanyolca, Portekizce, Almanca ya da Fransızca). Başka bir dil için oyunda Ayarlar&#x27;ı aç ve bir dile dokun.</p></details><details><summary>Baştan nasıl başlarım ya da verilerimi nasıl silerim?</summary><p>Oyunda Ayarlar&#x27;ı aç ve “Kaydı sıfırla”ya dokun ya da oyunu sil. İlerlemen yalnızca cihazında saklanır.</p></details></div></section></main><footer class="wrap"><nav><a href="./"><span data-l="en">Support</span><span data-l="tr">Destek</span></a><a href="privacy.html"><span data-l="en">Privacy Policy</span><span data-l="tr">Gizlilik Politikası</span></a><a href="terms.html"><span data-l="en">Terms of Use</span><span data-l="tr">Kullanım Koşulları</span></a></nav><span>© 2026 Fatih Sultan Kilic</span></footer></body></html>
